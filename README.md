@@ -33,11 +33,11 @@ $$
 for waveguide modes, we set $H(x,y,z)=H(x,y)e^{-i\beta z}$， and we can obtain the equations of $H_{x},H_{y}$
 
 $$
-\frac{\partial^2 d_{x}}{\partial x^2}+\frac{\varepsilon_y}{\varepsilon_z} \frac{\partial^2 d_{x}}{\partial y^2}+(1-\frac{\varepsilon_y}{\varepsilon_z})\frac{\partial^2 d_{y}}{\partial x \partial y}+k^2 \varepsilon_{x} d_{x}^{2}=\beta^{2}d_{x} 
+\frac{\partial^2 h_{x}}{\partial x^2}+\frac{\varepsilon_y}{\varepsilon_z} \frac{\partial^2 h_{x}}{\partial y^2}+(1-\frac{\varepsilon_y}{\varepsilon_z})\frac{\partial^2 h_{y}}{\partial x \partial y}+k^2 \varepsilon_{x} h_{x}^{2}=\beta^{2}h_{x}
 $$
 
 $$
-\frac{\partial^2 d_{y}}{\partial y^2}+\frac{\varepsilon_x}{\varepsilon_z} \frac{\partial^2 d_{y}}{\partial x^2}+(1-\frac{\varepsilon_x}{\varepsilon_z})\frac{\partial^2 d_{x}}{\partial x \partial y}+k^2 \varepsilon_{y} d_{y}^{2}=\beta^{2}d_{y}
+\frac{\partial^2 h_{y}}{\partial y^2}+\frac{\varepsilon_x}{\varepsilon_z} \frac{\partial^2 h_{y}}{\partial x^2}+(1-\frac{\varepsilon_x}{\varepsilon_z})\frac{\partial^2 h_{x}}{\partial x \partial y}+k^2 \varepsilon_{y} h_{y}^{2}=\beta^{2}h_{y}
 $$
 
 after derivations, the final five-point equations to be used in program should be
@@ -49,7 +49,7 @@ H_{xW}+H_{xE}+\frac{d_{x}}{d_{y}}\left( \frac{\frac{1}{\epsilon_{1z}}}{\frac{1}{
 $$
 
 $$
-$\left( \frac{k^2}{\frac{1}{\epsilon_{4y}}+\frac{1}{\epsilon{3y}}}(d_{x})^2 -2+\frac{k^2}{\frac{1}{\epsilon_{1y}}+\frac{1}{\epsilon_{2y}}}(d_{x})^2-
+\left( \frac{k^2}{\frac{1}{\epsilon_{4y}}+\frac{1}{\epsilon{3y}}}(d_{x})^2 -2+\frac{k^2}{\frac{1}{\epsilon_{1y}}+\frac{1}{\epsilon_{2y}}}(d_{x})^2-
 \frac{\frac{1}{\epsilon_{3z}}+\frac{1}{\epsilon_{4z}}}{\frac{1}{\epsilon_{4y}}+\frac{1}{\epsilon_{3y}}} \left(\frac{{d_{x}}^2}{{d_{y}}^2}\right)-
 \frac{\frac{1}{\epsilon_{2z}}+\frac{1}{\epsilon_{1z}}}{\frac{1}{\epsilon_{2y}}+\frac{1}{\epsilon_{1y}}} \left(\frac{{d_{x}}^2}{{d_{y}}^2}\right) \right) H_{xP}
 $$
