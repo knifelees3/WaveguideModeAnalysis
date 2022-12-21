@@ -2,7 +2,7 @@ n_clad=1.45;
 nx_guide=1.46;   ny_guide=1.46;  nz_guide=1.46;
 
 
-radius=3.5e-6; % radius of fiber
+radius=500e-9; % radius of fiber
 w=8*radius; % Simulating range
 
 % Geometry and grid

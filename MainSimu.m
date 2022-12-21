@@ -1,16 +1,16 @@
 % The main program for simulating the eigen mode analysis
 
 % Set the material and geometry
-% % the step index fiber
-% WaveguideSet_StepIndexFiber;
-% Rectangle waveguide
-WaveguideSet_RectGuide;
+% the step index fiber
+WaveguideSet_StepIndexFiber;
+% % Rectangle waveguide
+% WaveguideSet_RectGuide;
 % Wavelength
 lamda=650e-9; % Wavelength
 k0=2*pi/lamda;
 
 kfind=k0*sqrt(max(GuideCross.nx_square(:)));
-ModeNum=2;
+ModeNum=4;
 %% Get the eigen field
 mode=FDFDMode(GuideCross,k0,kfind,ModeNum);
 %%  plot the results
