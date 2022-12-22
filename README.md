@@ -2,6 +2,7 @@
 ## Introduction of the program
 
 This program simulates the mode of waveguides and the material could be anisotropic:
+
 $$
 \varepsilon = \left[\begin{matrix}
 &\varepsilon_{xx} & 0     & 0  \\
@@ -14,6 +15,7 @@ $$
 ## Theoretical formulation
 
 We begin from the Maxwell equations
+
 $$
 \nabla \times H =i \times \omega [ \varepsilon]E
 $$
